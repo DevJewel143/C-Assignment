@@ -18,7 +18,7 @@ int main()
     string fileName;
     cout<< "Enter your File Name" <<endl;
     cout<< "Example : myfile.txt" <<endl;
-    cin>>fileName;
+    getline(cin, fileName);
     ifstream infile;
     infile.open(fileName);
     if(infile.fail())
